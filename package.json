@@ -4,7 +4,7 @@
   "description": "Nexter APP",
   "main": "index.js",
   "scripts": {
-    "serve": "concurrently \"npm run watch:sass\" \"npx live-server --ignore=node_modules .\" --browser=firefox",
+    "serve": "concurrently \"npm run watch:sass\" \"npx live-server --ignore=node_modules --browser=firefox\"",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
